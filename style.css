@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(243, 233, 238);
+  color: rgb(87, 12, 27);
+  font-family: "montserrat", sans-serif;
+}
+input,
+button {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #ded6f2;
+  border: none;
+  color: #504d4d;
+  border-radius: 10px 0 10px;
+  font-size: 20px;
+  font-weight: 300;
+  outline: none;
+  transition: 0.2s ease-out;
+  box-shadow: 5px 5px 2px 1px rgba(172, 172, 192, 0.2);
+}
+img {
+  display: block;
+  margin: 0 auto;
+  width: 55px;
+  mix-blend-mode: multiply;
+  filter: contrast(150%);
+}
+
+h2 {
+  line-height: 30px;
+  text-shadow: 4px 4px rgba(160, 136, 136, 0.4);
+  font-weight: 600;
+}
+.current-temperature {
+  margin-top: 10px;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+button:hover,
+input:hover,
+.col-sm:hover {
+  transition: 0.2s ease-out;
+  box-shadow: 5px 5px 2px 1px rgba(172, 172, 192, 0.2);
+  border-radius: 10px 0 10px;
+  background-color: #ece1e1;
+  cursor: pointer;
+}
+.col-sm:hover {
+  background-color: #dad7e9;
+}
+.card {
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 12px 12px 2px 1px rgba(172, 172, 192, 0.2);
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+.search-bar {
+  text-align: center;
+  padding: 15px;
+}
+.current-img {
+  width: 50px;
+  position: relative;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+.location,
+.weekly-weather {
+  text-align: center;
+}
+.units-fahrenheit,
+.units-celsius {
+  position: relative;
+  bottom: 18px;
+  font-size: 16px;
+}
+.temperature,
+.day {
+  font-size: 15px;
+  padding: 8px;
+  margin: 5px;
+}
+.row {
+  margin: 20px;
+}
+.description p {
+  margin: 0;
+}
