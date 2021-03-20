@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/78afbfc656.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather Application</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <form class="search-bar">
+          <input
+            type="text"
+            name="search"
+            autofocus="on"
+            out
+            autocomplete="off"
+            placeholder="Enter city..."
+            id="inputCity"
+          />
+          <button id="inputSubmit">Search</button>
+          <button id="inputSubmitLocation">Current</button>
+        </form>
+        <div class="row">
+          <div class="col-6 location">
+            <h2 class="city"></h2>
+            <p class="location-date"></p>
+            <img src="src/Sunny.jpg" alt="sunny-weather" class="current-img" />
+            <span class="current-temperature"></span>
+            <a href="#" class="units-celsius">°C</a>
+            <a href="#" class="units-fahrenheit">°F</a>
+            <br />
+          </div>
+          <div class="col-6 description">
+            <p>Precipitation: <em class="precipitation"></em>%</p>
+            <p>Wind: <em class="wind"></em> km/h</p>
+            <p>Humidity: <em class="humidity"></em>%</p>
+          </div>
+        </div>
+        <div class="weekly-weather">
+          <div class="row">
+            <div class="col-sm">
+              <strong class="day">Monday</strong>
+              <img src="src/AllSunny.png" alt="Sunny" />
+              <p class="temperature">+22℃ / <strong>+18℃</strong></p>
+            </div>
+            <div class="col-sm">
+              <strong class="day">Tuesday</strong>
+              <img src="src/AllSunny.png" alt="AllSunny" />
+              <p class="temperature">+24℃ / <strong>+19℃</strong></p>
+            </div>
+            <div class="col-sm">
+              <strong class="day">Wednesday</strong>
+              <img src="src/Rainy.jpg" alt="Rainy" />
+              <p class="temperature">+21℃ / <strong>+17℃</strong></p>
+            </div>
+            <div class="col-sm">
+              <strong class="day">Thursday</strong>
+              <img src="src/Sunny.jpg" alt="Sunny" />
+              <p class="temperature">+25℃ / <strong>+20℃</strong></p>
+            </div>
+            <div class="col-sm">
+              <strong class="day"> Friday </strong>
+              <img src="src/Cloudy.png" alt="Cloudy" />
+              <p class="temperature">+25℃ / <strong>+20℃</strong></p>
+            </div>
+            <div class="col-sm">
+              <strong class="day">Saturday</strong>
+              <img src="src/Sunny.jpg" alt="Sunny" />
+              <p class="temperature">+23℃ / <strong>+20℃</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
