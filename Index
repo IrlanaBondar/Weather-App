@@ -20,7 +20,7 @@
       src="https://kit.fontawesome.com/78afbfc656.js"
       crossorigin="anonymous"
     ></script>
-    <title>Weather Application</title>
+    <title>Weather App</title>
   </head>
   <body>
     <div class="container">
