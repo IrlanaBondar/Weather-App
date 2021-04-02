@@ -49,9 +49,13 @@ input:hover,
 .col-sm:hover {
   background-color: #dad7e9;
 }
+.card-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
 .card {
-  margin: 20px;
   border-radius: 20px;
+  border: 1px solid rgb(211, 184, 216);
   box-shadow: 12px 12px 2px 1px rgba(172, 172, 192, 0.2);
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }

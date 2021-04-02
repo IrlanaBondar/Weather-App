@@ -24,77 +24,84 @@
   </head>
   <body>
     <div class="container">
-      <div class="card">
-        <form class="search-bar">
-          <input
-            type="text"
-            name="search"
-            autofocus="on"
-            out
-            autocomplete="off"
-            placeholder="Enter city..."
-            id="inputCity"
-          />
-          <button id="inputSubmit">Search</button>
-          <button id="inputSubmitLocation">Current</button>
-        </form>
-        <div class="row">
-          <div class="col-6 location">
-            <h2 class="city"></h2>
-            <p class="location-date"></p>
-            <img src="src/Sunny.jpg" alt="sunny-weather" class="current-img" />
-            <span class="current-temperature"></span>
-            <a href="#" class="units-celsius">°C</a>
-            <a href="#" class="units-fahrenheit">°F</a>
-            <br />
-          </div>
-          <div class="col-6 description">
-            <p>Precipitation: <em class="precipitation"></em>%</p>
-            <p>Wind: <em class="wind"></em> km/h</p>
-            <p>Humidity: <em class="humidity"></em>%</p>
-          </div>
-        </div>
-        <div class="weekly-weather">
+      <div class="card-wrapper">
+        <div class="card">
+          <form class="search-bar">
+            <input
+              type="text"
+              name="search"
+              autofocus="on"
+              out
+              autocomplete="off"
+              placeholder="Enter city..."
+              id="inputCity"
+            />
+            <button id="inputSubmit">Search</button>
+            <button id="inputSubmitLocation">Current</button>
+          </form>
           <div class="row">
-            <div class="col-sm">
-              <strong class="day">Monday</strong>
-              <img src="src/AllSunny.png" alt="Sunny" />
-              <p class="temperature">+22℃ / <strong>+18℃</strong></p>
+            <div class="col-6 location">
+              <h2 class="city"></h2>
+              <p class="location-date"></p>
+              <img
+                src="src/Sunny.jpg"
+                alt="sunny-weather"
+                class="current-img"
+              />
+              <span class="current-temperature"></span>
+              <a href="#" class="units-celsius">°C</a>
+              <a href="#" class="units-fahrenheit">°F</a>
+              <br />
             </div>
-            <div class="col-sm">
-              <strong class="day">Tuesday</strong>
-              <img src="src/AllSunny.png" alt="AllSunny" />
-              <p class="temperature">+24℃ / <strong>+19℃</strong></p>
+            <div class="col-6 description">
+              <p>Precipitation: <em class="precipitation"></em>%</p>
+              <p>Wind: <em class="wind"></em> km/h</p>
+              <p>Humidity: <em class="humidity"></em>%</p>
             </div>
-            <div class="col-sm">
-              <strong class="day">Wednesday</strong>
-              <img src="src/Rainy.jpg" alt="Rainy" />
-              <p class="temperature">+21℃ / <strong>+17℃</strong></p>
-            </div>
-            <div class="col-sm">
-              <strong class="day">Thursday</strong>
-              <img src="src/Sunny.jpg" alt="Sunny" />
-              <p class="temperature">+25℃ / <strong>+20℃</strong></p>
-            </div>
-            <div class="col-sm">
-              <strong class="day"> Friday </strong>
-              <img src="src/Cloudy.png" alt="Cloudy" />
-              <p class="temperature">+25℃ / <strong>+20℃</strong></p>
-            </div>
-            <div class="col-sm">
-              <strong class="day">Saturday</strong>
-              <img src="src/Sunny.jpg" alt="Sunny" />
-              <p class="temperature">+23℃ / <strong>+20℃</strong></p>
+          </div>
+          <div class="weekly-weather">
+            <div class="row">
+              <div class="col-sm">
+                <strong class="day">Monday</strong>
+                <img src="src/AllSunny.png" alt="Sunny" />
+                <p class="temperature">+22℃ / <strong>+18℃</strong></p>
+              </div>
+              <div class="col-sm">
+                <strong class="day">Tuesday</strong>
+                <img src="src/AllSunny.png" alt="AllSunny" />
+                <p class="temperature">+24℃ / <strong>+19℃</strong></p>
+              </div>
+              <div class="col-sm">
+                <strong class="day">Wednesday</strong>
+                <img src="src/Rainy.jpg" alt="Rainy" />
+                <p class="temperature">+21℃ / <strong>+17℃</strong></p>
+              </div>
+              <div class="col-sm">
+                <strong class="day">Thursday</strong>
+                <img src="src/Sunny.jpg" alt="Sunny" />
+                <p class="temperature">+25℃ / <strong>+20℃</strong></p>
+              </div>
+              <div class="col-sm">
+                <strong class="day"> Friday </strong>
+                <img src="src/Cloudy.png" alt="Cloudy" />
+                <p class="temperature">+25℃ / <strong>+20℃</strong></p>
+              </div>
+              <div class="col-sm">
+                <strong class="day">Saturday</strong>
+                <img src="src/Sunny.jpg" alt="Sunny" />
+                <p class="temperature">+23℃ / <strong>+20℃</strong></p>
+              </div>
             </div>
           </div>
         </div>
+        <a
+          href="https://github.com/IrlanaBondar/Weather-App"
+          class="open-source"
+          >Open-source code</a
+        >
+        by Irlana Bondar
       </div>
-      <a href="https://github.com/IrlanaBondar/Weather-App" class="open-source"
-        >Open-source code</a
-      >
-      by Irlana Bondar
     </div>
-
     <script src="src/index.js"></script>
   </body>
 </html>
